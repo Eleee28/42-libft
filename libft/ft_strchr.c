@@ -16,6 +16,8 @@ char *ft_strchr(char *s, int c)
 }   // Segmentation fault when not found!!
 */
 
+#include "libft.h"
+
 char *ft_strchr(const char *str, int c)     // Check
 {
     while (*str != (char)c)
@@ -27,15 +29,15 @@ char *ft_strchr(const char *str, int c)     // Check
     }
     return (char *)str;
 }
-
+/*
 #include <string.h>
-#include <stdio.h>
 
 int main()
 {
     char *ptr, str[] = "Holaa";
 
-    ptr = ft_strchr(str, 'l');
+    ptr = ft_strchr(str, '\0');
     printf("%s\n", ptr);
     return (0);
 }
+*/

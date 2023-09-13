@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int	ft_tolower(int c)
 {	
     if ((c >= 'A' && c <= 'Z'))
@@ -5,3 +7,14 @@ int	ft_tolower(int c)
 		
 	return (c);
 }
+
+/*
+#include <ctype.h>
+
+int main()
+{
+	printf("%c\n", ft_tolower('A'));
+    printf("%c\n", tolower('A'));
+	return (0);
+}
+*/

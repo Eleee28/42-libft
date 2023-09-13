@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int	ft_toupper(int c)
 {	
     if ((c >= 'a' && c <= 'z'))
@@ -8,12 +10,11 @@ int	ft_toupper(int c)
 
 /*
 #include <ctype.h>
-#include <stdio.h>
 
 int main()
 {
-	printf("%c\n", ft_strupcase('a'));
-    printf("%c\n", toupper(p));
+	printf("%c\n", ft_toupper('a'));
+    printf("%c\n", toupper('a'));
 	return (0);
 }
 */

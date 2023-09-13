@@ -1,8 +1,10 @@
-void *ft_memset(void *s, int c, unsigned long n)
+#include "libft.h"
+
+void *ft_memset(void *s, int c, size_t n)
 {
     unsigned char   *aux;
 
-    aux = (unsigned char *)s;
+    aux = s;
     while (n > 0)
     {
         *aux = (unsigned char)c;
@@ -11,7 +13,7 @@ void *ft_memset(void *s, int c, unsigned long n)
     }
     return (s);
 }
-
+/*
 #include <stdio.h>
 
 int     main(void)
@@ -22,4 +24,4 @@ int     main(void)
         printf("Modified string: %s\n", str);
         return (0);
 }
-
+*/

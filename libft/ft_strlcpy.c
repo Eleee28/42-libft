@@ -1,3 +1,4 @@
+/*
 static int	ft_strlen(char *str)
 {
 	int	length;
@@ -7,11 +8,14 @@ static int	ft_strlen(char *str)
 		length++;
 	return (length);
 }
+*/
 
-unsigned long	ft_strlcpy(char *dest, char *src, unsigned long size)
+#include "libft.h"
+
+size_t  ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	unsigned long	size_src;
-	unsigned long	i;
+	size_t	size_src;
+	size_t	i;
 
 	i = 0;
 	if (size != 0)
@@ -26,3 +30,16 @@ unsigned long	ft_strlcpy(char *dest, char *src, unsigned long size)
 	size_src = ft_strlen(src);
 	return (size_src);
 }
+/*
+#include <strings.h>
+
+int	main(void)
+{
+	char str1[] = "Hello World!", str2[] = "abcdefg", str3[] = "Hello World!";
+	printf("Original: %d\n", strlcpy(str3, str2, 5));
+	printf("Original: %s\n", str3);
+	printf("Mine: %ld\n", ft_strlcpy(str1, str2, 5));
+	printf("Mine: %s\n", str1);
+	return (0);
+}
+*/

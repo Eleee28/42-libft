@@ -1,3 +1,4 @@
+/*
 static void *ft_memset(void *s, int c, unsigned long n)
 {
     unsigned char   *aux;
@@ -11,8 +12,14 @@ static void *ft_memset(void *s, int c, unsigned long n)
     }
     return (s);
 }
+*/
+#include "libft.h"
 
-void ft_bzero(void *s, unsigned long n)
+// there are compilation errors here (not recognizing ft_memset)!!
+
+//extern ft_memcpy(void *dest, const void *src, size_t n);
+
+void ft_bzero(void *s, size_t n)
 {
     ft_memset(s, '\0', n);
 }

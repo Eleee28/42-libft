@@ -1,7 +1,9 @@
-static int	ft_total_len(char *src, char *dest, unsigned int size)
+#include "libft.h"
+
+static int	ft_total_len(const char *src, const char *dest, size_t size)
 {
-	unsigned int	src_len;
-	unsigned int	dest_len;
+	size_t	src_len;
+	size_t	dest_len;
 
 	src_len = 0;
 	while (src[src_len])
@@ -12,11 +14,11 @@ static int	ft_total_len(char *src, char *dest, unsigned int size)
 	return (dest_len + src_len);
 }
 
-unsigned long	ft_strlcat(char *dest, char *src, unsigned long size)
+size_t  ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned long	i;
-	unsigned long	j;
-	unsigned long	total_len;
+	size_t	i;
+	size_t	j;
+	size_t	total_len;
 
 	total_len = ft_total_len(src, dest, size);
 	i = 0;
@@ -35,3 +37,13 @@ unsigned long	ft_strlcat(char *dest, char *src, unsigned long size)
 	dest[i] = '\0';
 	return (total_len);
 }
+
+int	main(void)
+{
+	char s1[] = "Hello A", s2[] = "World!";
+	printf("%ld\n", ft_strlcat(s1, s2, 11));
+	printf("%s\n", s1);
+	return (0);
+}
+
+// Error stack smashing detected terminated, Aborted (core dumped)

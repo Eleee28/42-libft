@@ -1,7 +1,9 @@
-int	ft_strncmp(char *s1, char *s2, unsigned long n)
+#include "libft.h"
+
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	int				ret_value;
-	unsigned long	i;
+	size_t	i;
 
 	i = 0;
 	ret_value = 0;
@@ -15,3 +17,4 @@ int	ft_strncmp(char *s1, char *s2, unsigned long n)
 	}
 	return (ret_value);
 }
+

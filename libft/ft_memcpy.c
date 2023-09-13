@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "libft.h"
 
-void *ft_memcpy(void *dest, const void *src, unsigned long n)
+void *ft_memcpy(void *dest, const void *src, size_t n)
 {
-    unsigned long i;
+    size_t i;
     const char *aux_src;
     char *aux_dest;
 
@@ -17,7 +17,7 @@ void *ft_memcpy(void *dest, const void *src, unsigned long n)
     }
     return (dest);
 }
-
+/*
 int main(void)
 {
     char src[] = "Hello World!", dest[] = "Hola Mundo!", *ptr;
@@ -27,3 +27,4 @@ int main(void)
     printf("Modified dest: %s\n", ptr);
     return (0);
 }
+*/
