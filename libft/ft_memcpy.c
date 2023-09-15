@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:56:21 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:37:30 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/09/15 19:02:18 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const char	*aux_src;
 	char		*aux_dest;
 
+	aux_dest = dest;
+	aux_src = src;
 	while (n--)
 		*aux_dest++ = *aux_src++;
 	return (dest);

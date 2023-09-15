@@ -3,15 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+         #
+#    By: codespace <codespace@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:34:16 by ejuarros          #+#    #+#              #
-#    Updated: 2023/09/15 11:42:40 by ejuarros         ###   ########.fr        #
+#    Updated: 2023/09/15 19:00:31 by codespace        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-
+# include header file
+# create lib
 
 
 NAME = libft.a
@@ -45,8 +46,11 @@ CFLAGS += -Wall -Werror -Wextra
 
 all: $(NAME)
 
+#$(NAME): $(MY_OBJECTS)
+#	cc $(CFLAGS) $(MY_OBJECTS) -o $(NAME)  
+
 $(NAME): $(MY_OBJECTS)
-	cc $(CFLAGS) $(MY_OBJECTS) -o $(NAME)  
+	ar -crs $(CFLAGS) $(MY_OBJECTS) -o $(NAME)
 
 clean:
 	$(REMOVE) $(MY_OBJECTS)
