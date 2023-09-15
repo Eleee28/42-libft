@@ -1,34 +1,46 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/15 09:56:06 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 11:18:18 by ejuarros         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void    *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    int i;
-    char *str;
-    
-    str = (char *)s;
-    i = 0;
-    while (*(str + i) != (char)c && i < n)
-        {
-            if (!*(str + i))
-                return (0);
-            else
-                i++;
-        }
-        return (str + i);   
+	size_t		i;
+	const char	*str;
+
+	str = s;
+	i = 0;
+	while (*(str + i) != (char)c && i < n)
+	{
+		if (!*(str + i))
+			return (0);
+		else
+			i++;
+	}
+	return ((void *)str + i);
 }
 /*
-#include <string.h>
+# include <string.h>
 
-int main()
+int	main(void)
 {
-    char *ptr, str[] = "Holaa", *ptr1;
+	char	*ptr;
+	char	str[] = "Holal\0a";
+	char	*ptr1;
 
-    ptr1 = memchr(str, 'l', 4);
-    printf("%s\n", ptr1);
-    ptr = ft_memchr(str, 'l', 4);
-    printf("%s\n", ptr);
-    return (0);
+	ptr1 = memchr(str, 'l', 4);
+	printf("%s\n", ptr1);
+	ptr = ft_memchr(str, 'l', 4);
+	printf("%s\n", ptr);
+	return (0);
 }
-
-// Run tests to check that it works
 */

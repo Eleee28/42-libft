@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/15 09:55:37 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 10:13:20 by ejuarros         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isdigit(int c)
@@ -11,7 +23,6 @@ int	ft_isdigit(int c)
 	return (ret_value);
 }
 /*
-#include <stdio.h>
 #include <ctype.h>
 
 int	main(void)

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/15 09:54:46 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 10:10:32 by ejuarros         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isalnum(int c)
@@ -10,16 +22,13 @@ int	ft_isalnum(int c)
 		ret_value = 0;
 	return (ret_value);
 }
-
 /*
-#include <stdio.h>
 #include <ctype.h>
 
 int	main(void)
 {
-	printf("Original: %d\n", isalnum('9'));	// isalnum returns 8 if true, 0 else
+	printf("Original: %d\n", isalnum('9'));
 	printf("Mine: %d\n", ft_isalnum('9'));
-	
 	return (0);
 }
 */

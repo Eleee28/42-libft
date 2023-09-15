@@ -1,3 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/09/15 11:34:16 by ejuarros          #+#    #+#              #
+#    Updated: 2023/09/15 11:42:40 by ejuarros         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+
+
+
+
 NAME = libft.a
 
 MY_SOURCES = ft_atoi.c \
@@ -30,7 +46,7 @@ CFLAGS += -Wall -Werror -Wextra
 all: $(NAME)
 
 $(NAME): $(MY_OBJECTS)
-	cc -o $(NAME) $(MY_OBJECTS) $(CFLAGS)
+	cc $(CFLAGS) $(MY_OBJECTS) -o $(NAME)  
 
 clean:
 	$(REMOVE) $(MY_OBJECTS)

@@ -1,18 +1,18 @@
-/*
-static int	ft_strlen(char *str)
-{
-	int	length;
-
-	length = 0;
-	while (str[length] != '\0')
-		length++;
-	return (length);
-}
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/15 09:59:19 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 10:28:01 by ejuarros         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	size_src;
 	size_t	i;

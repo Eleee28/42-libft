@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/15 09:55:03 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 10:23:09 by ejuarros         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int	ft_islower(int c)
@@ -22,7 +34,7 @@ static int	ft_isupper(int c)
 	return (ret_value);
 }
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	int	ret_value;
 
@@ -33,12 +45,11 @@ int ft_isalpha(int c)
 	return (ret_value);
 }
 /*
-#include <stdio.h>
 #include <ctype.h>
 
 int	main(void)
 {
-	printf("Original: %d\n", isalpha('a'));	// isalpha returns 1024 if true, 0 else
+	printf("Original: %d\n", isalpha('a'));
 	printf("Mine: %d\n", ft_isalpha('a'));
 	
 	return (0);
