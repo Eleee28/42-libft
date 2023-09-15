@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:29:32 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/09/15 18:32:58 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,15 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		i;
-	char	*ptr;
+	char 	*ptr;
 	char	*aux;
 
-	ptr = 0;
-	while (s[i])
+	aux = ft_strchr(s, c);
+	while (aux)
 	{
-		aux = ft_strchr(s, c);
-		if (aux != 0)
-			ptr = aux;
-		i++;
+		ptr = aux;
+		aux++;
+		aux = ft_strchr(aux, c);
 	}
 	return (ptr);
 }
@@ -38,5 +36,3 @@ int main(void)
 	return (0);
 }
 */
-
-// Segmentation fault

@@ -14,14 +14,14 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	while (*str != (char)c)
-	{
+	while (*str++ != (char)c)
+	//{
 		if (!*str)
 			return (0);
-		else
-			str++;
-	}
-	return ((char *)str);
+		//else
+			//str++;
+	//}
+	return ((char *)str - 1);
 }
 /*
 #include <string.h>
