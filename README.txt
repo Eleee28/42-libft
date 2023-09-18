@@ -10,3 +10,7 @@ isascii done
 Check:
 
 ft_memchr
+ft_strdup
+
+Faltan de hacer del libc:
+    strnstr

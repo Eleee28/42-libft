@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:35 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 12:49:16 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/09/16 10:34:26 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
 char	*ft_strnstr(const char *str, const char *to_find, size_t size)
 {
 	size_t	str_cnt;
@@ -43,50 +44,43 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t size)
 	}
 	return (0);
 }
-/*
-char	*ft_strstr(char *str, char *to_find)
-{
-	char	*aux_str;
-	char	*aux_to_find;
-
-	if (*to_find == '\0')
-		return (str);
-	aux_to_find = to_find;
-	while (*str != '\0')
-	{
-		if (*str == *to_find)
-		{
-			aux_str = str;
-			while ((*str != '\0') && (*to_find != '\0') && (*str == *to_find))
-			{
-				to_find++;
-				str++;
-			}
-			if (*to_find == '\0')
-				return (aux_str);
-			to_find = aux_to_find;
-			str = aux_str + 1;
-		}
-		else
-			str++;
-	}
-	return (0);
-}
 */
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	while (i < len && haystack[i])
+	{
+		j = 0;
+		while (needle[j] && haystack[i + j] == needle[j])
+			j++;
+		if (!needle[j])
+			return ((char *)&haystack[i + j - 1]);
+		else
+			i++;
+	}
+	return (0);	
+}
+
+
 
 #include <string.h>
 
 int main(void)
 {
-	char dest[] = "abc";
+	char dest[] = "aaaabcbad";
     char src[] = "b";
 	char *pw;
-	char dest1[] = "abc";
+	char dest1[] = "aaaabcbad";
     char src1[] = "b";
-
 
     pw = ft_strnstr(dest, src, 2);
 	printf("%s\n", pw);
-	printf("%s\n", strnstr(dest1, src1, 2));
+	//printf("%s\n", strnstr(dest1, src1, 2));
     return (0);
 }
+
+// segmentation fault when the size is small and no occurence is found
