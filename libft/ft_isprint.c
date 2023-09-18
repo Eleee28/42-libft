@@ -28,7 +28,7 @@ int	ft_isprint(int c)
 
 int	main(void)
 {
-	printf("Original: %d\n", isprint('~'));	// isprint returns 16384 if true, 0 else
+	printf("Original: %d\n", isprint('~'));	
 	printf("Mine: %d\n", ft_isprint('~'));
 
 	return (0);

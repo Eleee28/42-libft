@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char 	*ptr;
+	char	*ptr;
 	char	*aux;
 
 	aux = ft_strchr(s, c);

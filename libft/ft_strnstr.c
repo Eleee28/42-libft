@@ -73,7 +73,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 
 	i = 0;
-	if(!needle)
+	if (!needle)
 		return ((char *)haystack);
 	while (haystack[i] && i < len)
 	{
@@ -104,4 +104,8 @@ int main(void)
     return (0);
 }
 */
-// segmentation fault when returning NULL or 0 (if I return needle when not found program okay)
+
+/* 
+segmentation fault when returning NULL or 0 
+(if I return needle when not found program okay)
+ */
