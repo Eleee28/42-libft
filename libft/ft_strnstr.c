@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:35 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/16 10:34:26 by codespace        ###   ########.fr       */
+/*   Updated: 2023/09/18 06:02:32 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t size)
 }
 */
 
+/*
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	int	i;
@@ -64,10 +65,30 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);	
 }
+*/
 
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	size_t	i;
+	size_t	j;
 
-
+	i = 0;
+	if(!needle)
+		return ((char *)haystack);
+	while (haystack[i] && i < len)
+	{
+		j = 0;
+		while (needle[j] && haystack[i + j] == needle[j] && i + j < len)
+			j++;
+		if (!needle[j])
+			return ((char *)haystack + i);
+		i++;
+	}
+	return (NULL);
+}
+/*
 #include <string.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -82,5 +103,5 @@ int main(void)
 	//printf("%s\n", strnstr(dest1, src1, 2));
     return (0);
 }
-
-// segmentation fault when the size is small and no occurence is found
+*/
+// segmentation fault when returning NULL or 0 (if I return needle when not found program okay)
