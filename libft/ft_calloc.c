@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 10:10:34 by codespace         #+#    #+#             */
-/*   Updated: 2023/09/16 10:10:35 by codespace        ###   ########.fr       */
+/*   Updated: 2023/09/18 10:16:57 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	char	*ptr;
 	size_t	i;
 
+	if (size <= 0)
+		return (0);
 	ptr = malloc(nmemb * size);
 	i = 0;
 	while (i++ < nmemb)
