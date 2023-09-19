@@ -32,8 +32,8 @@ char    *ft_strtrim(char const *s1, char const *set)
     while (beg < end && find_char(set, s1[end - 1]))
         end--;
     aux = end - beg + 1;
-    str = malloc((aux) * sizeof(char));
-    if ((aux) <= 0)
+    str = malloc(aux);
+    if (aux <= 0)
         return (0);
     ft_strlcpy(str, &s1[beg], (end - beg + 1));
     return (str);
