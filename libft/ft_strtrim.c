@@ -1,32 +1,20 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/18 07:48:28 by codespace         #+#    #+#             */
-/*   Updated: 2023/09/18 10:24:46 by codespace        ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
 
-static int  find_char(const char *s, char c)
+static int  find_char(char const *s, char c)
 {
     int i;
-    int ok;
+    int found;
     
     i = 0;
-    ok = 0;
-    while (s[i] && !ok)
+    found = 0;
+    while (*(s + i) && !found)
     {
         if (s[i] == c)
-            ok = 1;
+            found = 1;
         else
             i++;
     }
-    return (ok);
+    return (found);
 }
 
 char    *ft_strtrim(char const *s1, char const *set)
@@ -35,17 +23,17 @@ char    *ft_strtrim(char const *s1, char const *set)
     int     i;
     int     end;
     int     beg;
+    int        aux;
 
     beg = 0;
     while (s1[beg] && find_char(set, s1[beg]))
         beg++;
     end = ft_strlen(s1);
     while (beg < end && find_char(set, s1[end - 1]))
-    {
-        str = malloc((beg - end + 1) * sizeof(*s1));
         end--;
-    }
-    if (!str)
+    aux = end - beg + 1;
+    str = malloc((aux) * sizeof(char));
+    if ((aux) <= 0)
         return (0);
     i = 0;
     while (beg < end)
@@ -62,9 +50,12 @@ char    *ft_strtrim(char const *s1, char const *set)
 
 int main(void)
 {
-    char str[] = "hello world";
+    char str[] = "eoeooaeoeo";
     char c[] = "eo";
+    char *s;
     
-    printf("%s\n", ft_strtrim(str, c));
+    s = ft_strtrim(str, c);
+    printf("%s\n", s);
+    free(s);
     return (0);
 }
