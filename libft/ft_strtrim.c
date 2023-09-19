@@ -35,6 +35,12 @@ char    *ft_strtrim(char const *s1, char const *set)
     str = malloc((aux) * sizeof(char));
     if ((aux) <= 0)
         return (0);
+    ft_strlcpy(str, &s1[beg], (end - beg + 1));
+    return (str);
+}
+
+/*
+---- SUSTITUIDO POR ft_strlcpy
     i = 0;
     while (beg < end)
     {
@@ -43,14 +49,13 @@ char    *ft_strtrim(char const *s1, char const *set)
         beg++;
     }
     str[i] = 0;
-    return (str);
-}
+*/
 
 #include <stdio.h>
 
 int main(void)
 {
-    char str[] = "eoeooaeoeo";
+    char str[] = "eobeooaeoeo";
     char c[] = "eo";
     char *s;
     
