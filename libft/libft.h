@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:49 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/20 09:46:14 by codespace        ###   ########.fr       */
+/*   Updated: 2023/09/20 09:55:14 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void    ft_striteri(char *s, void (*f)(unsigned int, char *));
 void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char *s, int fd);
+void    ft_putendl_fd(char *s, int fd);
+
 
 
 
