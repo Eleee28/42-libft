@@ -1,20 +1,19 @@
-#include <stdlib.h>
+#include "libft.h"
 
-static int  num_words(char const *s, char c)
+static int  times_in_str(char const *s, char c)
 {
     int i;
-    int num_words;
+    int times;
 
     i = 0;
-    num_words = 0;
+    times = 0;
     while (s[i])
     {
         if (s[i] == c)
-            num_words++;
+            times++;
         i++;
     }
-    num_words++;
-    return (num_words);
+    return (times);
 }
 
 static void str_cpy(char const *s, char c, char **str)
@@ -34,7 +33,6 @@ static void str_cpy(char const *s, char c, char **str)
             i++;
             col++;
         }
-        str[row][col] = 0;
         i++;
         row++;
     }
@@ -42,13 +40,7 @@ static void str_cpy(char const *s, char c, char **str)
 
 static void free_mem(char **str)
 {
-    i = 0;
-    while (str[i][0])
-    {
-      free(str[i]);
-      i++;
-    }
-    free(str);
+    
 }
 
 char    **ft_split(char const *s, char c)
@@ -58,9 +50,7 @@ char    **ft_split(char const *s, char c)
     int     row;
     int     prev_i;
 
-    str = malloc((num_words(s, c) + 1) * sizeof(char *));
-    if (!s || !str)
-      return (0);
+    str = malloc((times_in_str(s, c) + 2) * sizeof(char *));
     i = 0;
     row = 0;
     prev_i = 0;
@@ -68,25 +58,18 @@ char    **ft_split(char const *s, char c)
     {
         while (s[prev_i + i] && s[prev_i + i] != c)
             i++;
-        str[row] = malloc(i + 1);
+        str[row] = malloc(i);
         row++;
         i++;
         prev_i += i;
         i = 0;
     }
-    /*
-    if ()
-    {
-      free_mem(str);
-      return (0);
-    }
-    */
     str[row] = malloc(1);
     str[row][0] = 0;
     str_cpy(s, c, str);
     return (str);
 }
-
+/*
 #include <stdio.h>
 
 int main(void)
@@ -99,9 +82,9 @@ int main(void)
     i = 0;
     j = 0;
     str = ft_split(s, c);
-    while (str[i][j])
+    while (i < 3)
     {
-      while (str[i][j])
+      while (j < 3)
       {
         printf("%c ", str[i][j]);
         j++;
@@ -110,7 +93,14 @@ int main(void)
       printf("\n");
       i++;
     }
-    free_mem(str);
-    
+      
+    i = 0;
+    while (i < 3)
+    {
+      free(str[i]);
+      i++;
+    }
+    free(str);
     return (0);
 }
+*/
