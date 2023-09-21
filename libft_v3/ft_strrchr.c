@@ -14,25 +14,24 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	end;
+	char	*ptr;
+	char	*aux;
 
-	end = ft_strlen(s);
-	while (end > 0)
+	aux = ft_strchr(s, c);
+	while (aux)
 	{
-		if (s[end] == c)
-			return ((char *)&s[end]);
-		end--;
+		ptr = aux;
+		aux++;
+		aux = ft_strchr(aux, c);
 	}
-	return (0);
+	return (ptr);
 }
 /*
-#include <stdio.h>
-
 int main(void)
 {
-	char *ptr, str[] = "teste";
+	char *ptr, str[] = "Holoaa";
 
-	ptr = ft_strrchr(str, '\0');
+	ptr = ft_strrchr(str, 'o');
 	printf("%s\n", ptr);
 	return (0);
 }

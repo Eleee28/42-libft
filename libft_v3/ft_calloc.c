@@ -1,39 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 18:32:58 by codespace        ###   ########.fr       */
+/*   Created: 2023/09/16 10:10:34 by codespace         #+#    #+#             */
+/*   Updated: 2023/09/18 10:16:57 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	int	end;
+	char	*ptr;
+	size_t	i;
 
-	end = ft_strlen(s);
-	while (end > 0)
-	{
-		if (s[end] == c)
-			return ((char *)&s[end]);
-		end--;
-	}
-	return (0);
+	if (size <= 0)
+		return (0);
+	ptr = malloc(nmemb * size);
+	i = 0;
+	while (i++ < nmemb)
+		ptr[i] = (unsigned char) 0;
+	return (ptr);
 }
 /*
 #include <stdio.h>
 
 int main(void)
 {
-	char *ptr, str[] = "teste";
+	char *ptr1 = ft_calloc(6, sizeof(int));
+	char *ptr2 = calloc(6, sizeof(int));
 
-	ptr = ft_strrchr(str, '\0');
-	printf("%s\n", ptr);
+	for (int i = 0; i < 6; i++)
+		printf("%d ", ptr1[i]);
+	printf("\n");
+	for (int i = 0; i < 6; i++)
+		printf("%d ", ptr2[i]);
 	return (0);
 }
 */

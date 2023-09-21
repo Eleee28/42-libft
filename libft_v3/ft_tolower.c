@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 11:29:44 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/21 11:53:18 by ejuarros         ###   ########.fr       */
+/*   Created: 2023/09/15 09:59:42 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 10:29:42 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_tolower(int c)
 {
-	size_t	i;
-
-	i = 0;
-	if (n == 0)
-		return (0);
-	while (((unsigned char *)s1)[i] == ((unsigned char *)s2)[i] && i < n - 1)
-		i++;
-	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+	if ((c >= 'A' && c <= 'Z'))
+		c += 32;
+	return (c);
 }
+
+/*
+#include <ctype.h>
+
+int main()
+{
+	printf("%c\n", ft_tolower('A'));
+	printf("%c\n", tolower('A'));
+	return (0);
+}
+*/

@@ -1,39 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 18:32:58 by codespace        ###   ########.fr       */
+/*   Created: 2023/09/15 09:55:37 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 10:13:20 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+int	ft_isdigit(int c)
 {
-	int	end;
+	int	ret_value;
 
-	end = ft_strlen(s);
-	while (end > 0)
-	{
-		if (s[end] == c)
-			return ((char *)&s[end]);
-		end--;
-	}
-	return (0);
+	if (c >= '0' && c <= '9')
+		ret_value = 1;
+	else
+		ret_value = 0;
+	return (ret_value);
 }
 /*
-#include <stdio.h>
+#include <ctype.h>
 
-int main(void)
+int	main(void)
 {
-	char *ptr, str[] = "teste";
-
-	ptr = ft_strrchr(str, '\0');
-	printf("%s\n", ptr);
+	printf("Original: %d\n", isdigit('3'));	// isdigit returns 2048 if true, 0 else
+	printf("Mine: %d\n", ft_isdigit('3'));
+	
 	return (0);
 }
 */

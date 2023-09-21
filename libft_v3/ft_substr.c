@@ -1,39 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 18:32:58 by codespace        ###   ########.fr       */
+/*   Created: 2023/09/18 06:31:28 by codespace         #+#    #+#             */
+/*   Updated: 2023/09/18 06:40:21 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int	end;
+	char	*subs;
+	size_t	i;
 
-	end = ft_strlen(s);
-	while (end > 0)
+	subs = malloc(len * sizeof(char));
+	i = 0;
+	while (i < len && s[start + i])
 	{
-		if (s[end] == c)
-			return ((char *)&s[end]);
-		end--;
+		subs[i] = s[start + i];
+		i++;
 	}
-	return (0);
+	return (subs);
 }
+/*
+// where do I return NULL?
+*/
+
 /*
 #include <stdio.h>
 
 int main(void)
 {
-	char *ptr, str[] = "teste";
-
-	ptr = ft_strrchr(str, '\0');
-	printf("%s\n", ptr);
+	char    *str = ft_substr("Hello world!", 2, 10);
+	printf("%s\n", str);
+	free(str);
 	return (0);
 }
 */

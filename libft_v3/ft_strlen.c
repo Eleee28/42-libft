@@ -1,39 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 18:32:58 by codespace        ###   ########.fr       */
+/*   Created: 2023/09/15 09:59:28 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 10:28:17 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+size_t	ft_strlen(const char *s)
 {
-	int	end;
+	size_t	length;
 
-	end = ft_strlen(s);
-	while (end > 0)
-	{
-		if (s[end] == c)
-			return ((char *)&s[end]);
-		end--;
-	}
-	return (0);
+	length = 0;
+	while (s[length])
+		length++;
+	return (length);
 }
 /*
+#include <string.h>
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-	char *ptr, str[] = "teste";
-
-	ptr = ft_strrchr(str, '\0');
-	printf("%s\n", ptr);
-	return (0);
+	printf("Original: %d\n", strlen("Hello World!"));
+	printf("Mine: %d\n", ft_strlen("Hello World!"));
 }
 */

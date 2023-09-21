@@ -1,38 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 18:32:58 by codespace        ###   ########.fr       */
+/*   Created: 2023/09/15 09:58:58 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 11:21:30 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strchr(const char *str, int c)
 {
-	int	end;
-
-	end = ft_strlen(s);
-	while (end > 0)
+	while (*str != (char)c)
 	{
-		if (s[end] == c)
-			return ((char *)&s[end]);
-		end--;
+		if (!*str)
+			return (0);
+		else
+			str++;
 	}
-	return (0);
+	return ((char *)str);
 }
 /*
-#include <stdio.h>
+#include <string.h>
 
-int main(void)
+int main()
 {
-	char *ptr, str[] = "teste";
+	char *ptr, str[] = "Holaa";
 
-	ptr = ft_strrchr(str, '\0');
+	ptr = ft_strchr(str, 'o');
 	printf("%s\n", ptr);
 	return (0);
 }
