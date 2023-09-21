@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 10:10:04 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/21 10:19:00 by ejuarros         ###   ########.fr       */
+/*   Created: 2023/09/15 09:55:49 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 09:55:50 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+int	ft_isprint(int c)
 {
-	if (n / 10 != 0)
-		ft_putnbr_fd(n / 10, fd);
-	else if (n < 0)
-		ft_putchar_fd('-', fd);
-	if (n < 0)
-		ft_putchar_fd((char){'0' - (n % 10)}, fd);
-	if (n >= 0)
-		ft_putchar_fd((char){'0' + (n % 10)}, fd);
+	int	ret_value;
+
+	if (c >= 32 && c <= 126)
+		ret_value = 1;
+	else
+		ret_value = 0;
+	return (ret_value);
 }
+/*
+#include <stdio.h>
+#include <ctype.h>
+
+int	main(void)
+{
+	printf("Original: %d\n", isprint('~'));	
+	printf("Mine: %d\n", ft_isprint('~'));
+
+	return (0);
+}
+*/

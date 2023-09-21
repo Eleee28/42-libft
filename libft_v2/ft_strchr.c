@@ -1,25 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 10:09:07 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/21 10:09:45 by ejuarros         ###   ########.fr       */
+/*   Created: 2023/09/15 09:58:58 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 11:21:30 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+char	*ft_strchr(const char *str, int c)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
+	while (*str != (char)c)
 	{
-		ft_putchar_fd(s[i], fd);
-		i++;
+		if (!*str)
+			return (0);
+		else
+			str++;
 	}
+	return ((char *)str);
 }
+/*
+#include <string.h>
+
+int main()
+{
+	char *ptr, str[] = "Holaa";
+
+	ptr = ft_strchr(str, 'o');
+	printf("%s\n", ptr);
+	return (0);
+}
+*/

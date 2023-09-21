@@ -6,7 +6,7 @@
 /*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 09:45:35 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/21 10:21:00 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/09/21 09:46:05 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ static int	find_char(char const *s, char c)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
+	int		i;
 	int		end;
 	int		beg;
 	int		aux;

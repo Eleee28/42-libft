@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 10:10:04 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/21 10:19:00 by ejuarros         ###   ########.fr       */
+/*   Created: 2023/09/21 11:29:44 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/21 11:53:18 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (n / 10 != 0)
-		ft_putnbr_fd(n / 10, fd);
-	else if (n < 0)
-		ft_putchar_fd('-', fd);
-	if (n < 0)
-		ft_putchar_fd((char){'0' - (n % 10)}, fd);
-	if (n >= 0)
-		ft_putchar_fd((char){'0' + (n % 10)}, fd);
+	size_t	i;
+
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (((unsigned char )s1)[i] == ((unsigned char)s2)[i] && i < n - 1)
+		i++;
+	return (((unsigned char )s1)[i] - ((unsigned char)s2)[i]);
 }

@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 08:45:09 by codespace         #+#    #+#             */
-/*   Updated: 2023/09/21 09:57:22 by ejuarros         ###   ########.fr       */
+/*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
+/*   Updated: 2023/09/15 18:32:58 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strrchr(const char *s, int c)
 {
-	char			*str;
-	unsigned int	i;
+	char	*ptr;
+	char	*aux;
 
-	i = 0;
-	while (s[i])
-		i++;
-	str = malloc(i);
-	if (!str)
-		return (0);
-	i = 0;
-	while (s[i])
+	aux = ft_strchr(s, c);
+	while (aux)
 	{
-		str[i] = f(i, s[i]);
-		i++;
+		ptr = aux;
+		aux++;
+		aux = ft_strchr(aux, c);
 	}
-	str[i] = 0;
-	return (str);
+	return (ptr);
 }
+/*
+int main(void)
+{
+	char *ptr, str[] = "Holoaa";
+
+	ptr = ft_strrchr(str, 'o');
+	printf("%s\n", ptr);
+	return (0);
+}
+*/
