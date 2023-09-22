@@ -6,12 +6,24 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 10:10:34 by codespace         #+#    #+#             */
-/*   Updated: 2023/09/18 10:16:57 by codespace        ###   ########.fr       */
+/*   Updated: 2023/09/22 11:52:59 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+void	*ft_calloc(size_t nmemb, size_t size)
+{
+	void	*ptr;
+
+	ptr = malloc(nmemb * size);
+	if (ptr <= 0)
+		return (0);
+	ft_bzero(ptr, nmemb * size);
+	return (ptr);
+}
+
+/*
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	char	*ptr;
@@ -25,6 +37,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		ptr[i] = (unsigned char) 0;
 	return (ptr);
 }
+*/
 /*
 #include <stdio.h>
 
