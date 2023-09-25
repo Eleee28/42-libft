@@ -1,59 +1,57 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/22 10:26:18 by ejuarros         ###   ########.fr       */
+/*   Created: 2023/09/16 10:10:40 by codespace         #+#    #+#             */
+/*   Updated: 2023/09/18 10:19:55 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strdup(const char *src)
 {
 	int		i;
+	int		len;
 	char	*ptr;
 
+	len = ft_strlen(src);
+	ptr = malloc(len + 1);
 	i = 0;
-	ptr = (char *)s;
-	while (ptr[i])
+	while (i < len)
+	{
+		*(ptr + i) = *(src + i);
 		i++;
-	while (i >= 0)
-	{
-		if (ptr[i] == (char)c)
-			return ((char *)&ptr[i]);
-		i--;
 	}
-	return (0);
+	ptr[i] = 0;
+	return (ptr);
 }
-
 /*
-char	*ft_strrchr(const char *s, int c)
-{
-	int	end;
-
-	end = ft_strlen(s);
-	while (end >= 0)
-	{
-		if (s[end] == c)
-			return ((char *)&s[end]);
-		end--;
-	}
-	return (0);
-}
-*/
-/*
+#include <string.h>
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-	char *ptr, str[] = "teste";
+	char str[5];
+	char *str_ptr;
+	char *src = NULL;
+	int	i;
 
-	ptr = ft_strrchr(str, '\0');
-	printf("%p\n", ptr);
+	str_ptr = &str[0];
+	i = 0;
+	while (i < 5)
+	{
+		str[i] = '0' + i;
+		i++;
+	}
+	src = ft_strdup(str_ptr);
+
+	printf("Original string in the stack: %s\n", str);
+	printf("Copied string in the heap: %s\n", src);
+	free(src);
 	return (0);
 }
 */

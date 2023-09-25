@@ -82,7 +82,7 @@ char	**ft_split(char const *s, char c)
 	int				j;
 	int				len_substr;
 
-	str = (char **)malloc(sizeof(*str) * (count_words(s, c) + 1));
+	str = (char **)malloc(sizeof(*str) * count_words(s, c) + 1);
 	if (!str)
 		return (0);
 	i = 0;
