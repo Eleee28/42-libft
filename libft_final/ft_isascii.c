@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*   By: elena <elena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:55:22 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:23:44 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/10/12 16:44:29 by elena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_isascii(int c)
 {
 	int	ret_value;
 
-	if (((c) & ~0x7f) == 0)
+	if ((c >= 0) && (c <= 127))
 		ret_value = 1;
 	else
 		ret_value = 0;

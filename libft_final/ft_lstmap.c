@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
+/*   By: elena <elena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 11:52:07 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/27 08:38:13 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/10/12 16:53:19 by elena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*aux1;
 	void	*cont;
 
-	if (!lst || !*f || !del)
+	if (!lst || !f || !del)
 		return (0);
 	new = 0;
 	while (lst)
