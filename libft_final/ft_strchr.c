@@ -6,7 +6,7 @@
 /*   By: elena <elena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:58:58 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/12 17:27:10 by elena            ###   ########.fr       */
+/*   Updated: 2023/10/14 15:54:46 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	if (!str)
-		return (0);
 	while (*str != (char)c)
 	{
 		if (!*str)
