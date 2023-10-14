@@ -30,15 +30,13 @@ BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 
 BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
-INCLUDE = libft.h
-
 REMOVE = rm -f
 
 LIB = ar -crs
 
 CC = cc
 
-CFLAGS += -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
 
@@ -59,4 +57,7 @@ fclean: clean
 
 re: fclean all
 
-# .PHONY: all clean fclean re --> no se lo que hace investigar si es necesario (creo que no es necesario)
+.PHONY: all clean fclean re 
+# .PHONY used to mark a target as phony: it doesn't consider for execution any file that matches its name.
+
+
