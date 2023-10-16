@@ -2,6 +2,6 @@
 
 Libft is a project that consists on replicating several funtions that belong to the Libc library.
 
-# Project status
+## Project status
 
 The project is finished.
