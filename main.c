@@ -262,3 +262,19 @@ int main(void)
     return (0);
 }
 */
+
+
+/** @brief main() function for ft_strchr.c
+ * 
+*/
+
+/*
+int main()
+{
+	char *ptr, str[] = "Holaa";
+
+	ptr = ft_strchr(str, 'o');
+	printf("%s\n", ptr);
+	return (0);
+}
+*/
