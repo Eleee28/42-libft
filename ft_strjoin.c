@@ -10,7 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strjoin.c
+ * 	@brief Apply functions to strings
+ * 
+ * 	This function joins two strings.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief joins two strings
+ * 
+ * 	@param s1 string 1
+ *	@param s2 string 2
+ * 	@return string result of concatenating s1 and s2
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -36,15 +50,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = 0;
 	return (str);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char    *str = ft_strjoin("Hello-", "world");
-	printf("%s\n", str);
-	free(str);
-	return (0);    
-}
-*/
