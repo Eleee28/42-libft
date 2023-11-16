@@ -6,11 +6,28 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:56:06 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/05 11:45:04 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:25:43 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_memchr.c
+ * 	@brief Libc memchr function
+ * 
+ * 	This function locates the first occurrence of a character in a string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief locates the first occurrence of a character in a string
+ * 
+ * 	The character is converted to an unsigned char.
+ * 
+ * 	@param s string
+ * 	@param c character to locate
+ * 	@param n number of bytes of s to search 
+ * 	@return pointer to the first occurrence
+*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -27,20 +44,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-/*
-# include <string.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*ptr;
-	char	str[] = "bonjourno";
-	char	*ptr1;
-
-	ptr1 = memchr(str, 'n', 2);
-	printf("%s\n", ptr1);
-	ptr = ft_memchr(str, 'n', 2);
-	printf("%s\n", ptr);
-	return (0);
-}
-*/

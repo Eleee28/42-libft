@@ -6,11 +6,26 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 09:35:23 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/26 09:43:04 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:01:05 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_lstnew.c
+ * 	@brief Function to manipulate lists
+ * 
+ * 	This function creates a new node.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief creates a new node
+ * 
+ * 	The content of the node is initialized with content and next with NULL.
+ * 
+ * 	@param content pointer to the content
+ * 	@return new node
+*/
 
 t_list	*ft_lstnew(void *content)
 {

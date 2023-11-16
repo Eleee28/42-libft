@@ -6,11 +6,26 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 10:23:40 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/26 10:32:35 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:39:18 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_lstlast.c
+ * 	@brief Function to manipulate lists
+ * 
+ * 	This function returns the last node of the list.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief returns the last node of the list
+ * 
+ * 	If the list does not exist the function has no effect.
+ * 
+ * 	@param lst pointer to the list
+ * 	@return last node of the list
+*/
 
 t_list	*ft_lstlast(t_list *lst)
 {

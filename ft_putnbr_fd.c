@@ -3,14 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elena <elena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 10:10:04 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/12 17:24:14 by elena            ###   ########.fr       */
+/*   Updated: 2023/11/16 11:36:42 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_putnbr_fd.c
+ * 	@brief Working with file descriptors
+ * 
+ * 	This function sends a number to a file descriptor.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief sends a number to a file descriptor
+ * 
+ * 	@param n number to send
+ * 	@param fd file descriptor 
+ * 	@return Void
+*/
 
 void	ft_putnbr_fd(int n, int fd)
 {

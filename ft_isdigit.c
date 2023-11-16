@@ -6,11 +6,29 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:55:37 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:13:20 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:04:32 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_isdigit.c
+ * 	@brief Libc isdigit function
+ * 
+ * 	This function tests whether a character is a decimal digit.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief tests whether a character is numeric
+ * 
+ * 	The value of the argument must be representable as an unsigned char or the 
+ * 	value of EOF. 
+ * 
+ * Decimal digit characers are: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+ * 
+ * 	@param c character to test
+ * 	@return 0 if the character tests false, 1 if the character tests true
+*/
 
 int	ft_isdigit(int c)
 {
@@ -22,14 +40,3 @@ int	ft_isdigit(int c)
 		ret_value = 0;
 	return (ret_value);
 }
-/*
-#include <ctype.h>
-
-int	main(void)
-{
-	printf("Original: %d\n", isdigit('3'));	// isdigit returns 2048 if true, 0 else
-	printf("Mine: %d\n", ft_isdigit('3'));
-	
-	return (0);
-}
-*/

@@ -6,11 +6,28 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:57:28 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:26:34 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:31:23 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_memset.c
+ * 	@brief Libc memset function
+ * 
+ * 	This function writes a number of characters to a string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief writes a number of characters to a string
+ * 
+ * 	The character is converted to an unsigned char.
+ * 
+ * 	@param s pointer to string
+ * 	@param c character to write
+ * 	@param n number of bytes to write
+ * 	@return pointer to string
+*/
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -25,15 +42,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-#include <stdio.h>
-
-int     main(void)
-{
-		char    str[] = "Hello World!";
-		printf("Original string: %s\n", str);
-		ft_memset(str, 'a', 7);
-		printf("Modified string: %s\n", str);
-		return (0);
-}
-*/

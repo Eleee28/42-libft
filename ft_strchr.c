@@ -3,14 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elena <elena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:58:58 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/14 15:54:46 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 12:00:22 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strchr.c
+ * 	@brief Libc strchr function
+ * 
+ * 	This function locates the first occurrence of a character in the string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief locates the first occurrence of a character in the string
+ * 
+ * 	The terminating null character is considered to be part of the string.
+ * 
+ * 	@param str string to be converted
+ * 	@return integer number
+*/
 
 char	*ft_strchr(const char *str, int c)
 {

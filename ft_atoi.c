@@ -6,11 +6,29 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:54:08 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/22 10:01:26 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:13:10 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_atoi.c
+ * 	@brief Libc atoi function
+ * 
+ * 	This function converts a string into an integer.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief converts a string into an integer
+ * 
+ * 	If the ' ', '\t', '\n', '\v', '\r', '\f' are encountered at the beggining
+ * 	of the string they would be skipped. The sign should be handled. If any non
+ * 	numeric character is encountered it stops reading and returns the number
+ * 	up to that point. 
+ * 
+ * 	@param nptr string to be converted
+ * 	@return integer number
+*/
 
 int	ft_atoi(const char *nptr)
 {
@@ -37,10 +55,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (num * sign);
 }
-/*
-int	main(void)
-{
-	printf("%d\n", ft_atoi("-12345") * 10);
-	return (0);
-}
-*/

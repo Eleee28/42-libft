@@ -6,11 +6,25 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 10:02:52 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/05 11:48:21 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:57:22 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+/** @file ft_split.c
+ * 	@brief Separate two strings
+ * 
+ * 	This function splits two strings using a character as delimiter.
+*/
+
+/* -- Includes -- */
+#include "libft.h"
+
+/** @brief counts the number of words using a character as separator
+ * 
+ * 	@param s string to split
+ * 	@param c character that acts as separator
+ * 	@return number of words
+*/
 
 static int	count_words(char const *s, char c)
 {
@@ -31,6 +45,13 @@ static int	count_words(char const *s, char c)
 	return (cnt);
 }
 
+/** @brief gets the length of a string using a character as end of string
+ * 
+ * 	@param s string to check length
+ * 	@param c character that acts as end
+ * 	@return length
+*/
+
 static int	substr_len(char const *s, char c, int len)
 {
 	int	n;
@@ -45,6 +66,15 @@ static int	substr_len(char const *s, char c, int len)
 	}
 	return (n);
 }
+
+/** @brief fills a string with info of another
+ * 
+ * 	@param s string with the info
+ * 	@param str string to fill
+ * 	@param pos index of s to start copying
+ * 	@param len maximum length to copy
+ * 	@return length of str
+*/
 
 static int	fill(const char *s, char *str, int pos, int len)
 {
@@ -61,6 +91,13 @@ static int	fill(const char *s, char *str, int pos, int len)
 	return (j);
 }
 
+/** @brief frees the dynamic memory 
+ * 
+ * 	@param str double pointer to characters
+ * 	@param len length of the string
+ * 	@return 0
+*/
+
 static char	**free_mem(char **str, int len)
 {
 	int	i;
@@ -74,6 +111,15 @@ static char	**free_mem(char **str, int len)
 	free(str);
 	return (0);
 }
+
+/** @brief splits two strings using a character as delimiter 
+ * 
+ * 	If malloc fails, the function has no effect.
+ * 
+ * 	@param s string to be split
+ * 	@param c character that acts as delimiter
+ * 	@return 2d array with the split string
+*/
 
 char	**ft_split(char const *s, char c)
 {
@@ -103,33 +149,3 @@ char	**ft_split(char const *s, char c)
 	str[j] = 0;
 	return (str);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-    char s[] = "abdhabhj";
-    char c = 'h';
-    char **str;
-    int   i, j;
-
-    i = 0;
-    j = 0;
-    str = ft_split(s, c);
-    while (str[i][j])
-    {
-      while (str[i][j])
-      {
-        printf("%c ", str[i][j]);
-        j++;
-      }
-      j = 0;
-      printf("\n");
-      i++;
-    }
-    free_mem(str);
-    
-    return (0);
-}
-*/

@@ -3,14 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elena <elena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:56:42 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/12 17:01:39 by elena            ###   ########.fr       */
+/*   Updated: 2023/11/16 11:27:29 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_memmove.c
+ * 	@brief Libc memmove function
+ * 
+ * 	This function copies bytes from one string to another.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief copies bytes from one string to another
+ * 
+ * 	The two strings may overlap; the copy is always done in a non-destructive
+ * 	manner.
+ * 
+ * 	@param dest destination pointer
+ * 	@param src source pointer
+ * 	@param n number of bytes to copy 
+ * 	@return pointer to the original value of dest
+*/
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -33,17 +51,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			*aux_dest++ = *aux_src++;
 	return (dest);
 }
-
-/*
-int main() 
-{
-    char str1[] = "Hello,";
-    char str2[] = " world!";
-
-    printf("Original str1: %s\n", str1);
-    ft_memmove(str1 + 6, str2, 7);
-    printf("Modified str1: %s\n", str1);
-
-    return 0;
-}
-*/

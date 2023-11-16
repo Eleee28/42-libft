@@ -3,14 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:55:49 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 09:55:50 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:06:35 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_isprint.c
+ * 	@brief Libc isprint function
+ * 
+ * 	This function tests whether a character is printable.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief tests whether a character is printable
+ * 
+ * 	The value of the argument must be representable as an unsigned char or the 
+ * 	value of EOF. Space (' ') is included as a printable character.
+ * 
+ * 	@param c character to test
+ * 	@return 0 if the character tests false, 1 if the character tests true
+*/
 
 int	ft_isprint(int c)
 {
@@ -22,15 +38,3 @@ int	ft_isprint(int c)
 		ret_value = 0;
 	return (ret_value);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	printf("Original: %d\n", isprint('~'));	
-	printf("Mine: %d\n", ft_isprint('~'));
-
-	return (0);
-}
-*/

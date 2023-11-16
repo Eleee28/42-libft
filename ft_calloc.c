@@ -6,11 +6,28 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 10:10:34 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/05 11:30:55 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 09:44:46 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_calloc.c
+ * 	@brief Libc calloc function
+ * 
+ * 	This function allocates memory.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief allocates memory
+ * 
+ * 	This function contiguosly allocates enough space. The allocated memory is 
+ * 	filled with zeroed bytes.
+ * 
+ * 	@param nmemb number of objects the memory is allocated for
+ * 	@param size bytes of memory of each object
+ * 	@return pointer to the allocated memory
+*/
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -22,20 +39,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, nmemb * size);
 	return (ptr);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char *ptr1 = ft_calloc(6, sizeof(int));
-	char *ptr2 = calloc(6, sizeof(int));
-
-	for (int i = 0; i < 6; i++)
-		printf("%d ", ptr1[i]);
-	printf("\n");
-	for (int i = 0; i < 6; i++)
-		printf("%d ", ptr2[i]);
-	return (0);
-}
-*/

@@ -6,12 +6,28 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:56:21 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/22 11:23:39 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:26:25 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdlib.h>
+/** @file ft_memcpy.c
+ * 	@brief Libc memcpy function
+ * 
+ * 	This function copies bytes from one memory area to another.
+*/
+
+/* -- Includes -- */
+#include "libft.h"
+
+/** @brief copies bytes from one memory area to another
+ * 
+ * 	If dest and src overlap, behavior is undefined.
+ * 
+ * 	@param dest destination pointer
+ * 	@param src source pointer
+ * 	@param n number of bytes to copy 
+ * 	@return pointer to the original value of dest
+*/
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -26,14 +42,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		*aux_dest++ = *aux_src++;
 	return (dest);
 }
-/*
-int main(void)
-{
-	char src[] = "Hello World!", dest[] = "Hola Mundo!", *ptr;
-	printf("Src: %s\n", src);
-	printf("Original dest: %s\n", dest);
-	ptr = (char *)ft_memcpy(dest, src, 7);
-	printf("Modified dest: %s\n", ptr);
-	return (0);
-}
-*/

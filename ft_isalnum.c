@@ -6,11 +6,29 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:54:46 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:10:32 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 09:54:24 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_isalnum.c
+ * 	@brief Libc isalnum function
+ * 
+ * 	This function tests whether a character is alphanumeric.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief tests whether a character is alphanumeric
+ * 
+ * 	This function makes calls to ft_isalpha() and ft_isdigit().
+ * 
+ * 	The value of the argument must be representable as an unsigned char or the 
+ * 	value of EOF.
+ * 
+ * 	@param c character to test
+ * 	@return 0 if the character tests false, 1 if the character tests true
+*/
 
 int	ft_isalnum(int c)
 {
@@ -22,13 +40,3 @@ int	ft_isalnum(int c)
 		ret_value = 0;
 	return (ret_value);
 }
-/*
-#include <ctype.h>
-
-int	main(void)
-{
-	printf("Original: %d\n", isalnum('9'));
-	printf("Mine: %d\n", ft_isalnum('9'));
-	return (0);
-}
-*/

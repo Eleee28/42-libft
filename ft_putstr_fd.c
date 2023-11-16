@@ -3,14 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 10:09:07 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/21 10:09:45 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:37:16 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_putstr_fd.c
+ * 	@brief Working with file descriptors
+ * 
+ * 	This function sends a string to a file descriptor.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief sends a string to a file descriptor
+ * 
+ * 	@param s string to send
+ * 	@param fd file descriptor 
+ * 	@return Void
+*/
 
 void	ft_putstr_fd(char *s, int fd)
 {

@@ -6,23 +6,30 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:54:26 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:21:47 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 09:37:40 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_bzero.c
+ * 	@brief Libc bzero function
+ * 
+ * 	This function writes zeroes to a byte string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief writes zeroes to a byte string
+ * 
+ * 	Writes n zeroed bytes to the string s. If n is zero, the function has no
+ * 	effect.
+ * 
+ * 	@param s string where zeroes are written
+ * 	@param n number of zeroed bytes written
+ * 	@return Void 
+*/
 
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, '\0', n);
 }
-/*
-int main()
-{
-	char str[] = "Hello World!";
-	printf("Original string: %s\n", str);
-	ft_bzero(str, 7);
-	printf("Modified string: %s\n", str);
-	return (0);
-}
-*/

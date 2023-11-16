@@ -3,14 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 09:31:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/21 09:38:32 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:16:12 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_itoa.c
+ * 	@brief itoa function (oposite to libc atoi function)
+ * 
+ * 	This function converts an integer to a string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief counts the digits of number
+ * 
+ * 	If the number is 0, that is one digit. If the number is negative, the 
+ * 	sign counts as an extra digit.
+ * 
+ * 	@param n number to count its digits
+ * 	@return number of digits
+*/
 
 static int	count_digits(int n)
 {
@@ -31,12 +47,27 @@ static int	count_digits(int n)
 	return (digits);
 }
 
+/** @brief permorms absolute value operation 
+ * 
+ * 	@param n number to operate
+ * 	@return absolute value
+*/
+
 static int	ft_abs(int n)
 {
 	if (n < 0)
 		n *= -1;
 	return (n);
 }
+
+/** @brief converts an integer to a string
+ * 
+ *	Use of malloc to allocate memory for the string. If malloc fails the function 
+ * 	has no effect.
+ * 
+ * 	@param n number to be converted
+ * 	@return string
+*/
 
 char	*ft_itoa(int n)
 {
@@ -66,12 +97,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-    printf("%s\n", ft_itoa(2147483647));
-    return (0);
-}
-*/

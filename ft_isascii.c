@@ -3,14 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elena <elena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:55:22 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/12 16:44:29 by elena            ###   ########.fr       */
+/*   Updated: 2023/11/16 10:00:42 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_isascii.c
+ * 	@brief Libc isascii function
+ * 
+ * 	This function tests whether a character is ASCII.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief tests whether a character is ASCII
+ * 
+ * 	An ASCII character is any character between 0 and 127 inclusive
+ * 
+ * 	@param c character to test
+ * 	@return 0 if the character tests false, 1 if the character tests true
+*/
 
 int	ft_isascii(int c)
 {
@@ -22,14 +37,3 @@ int	ft_isascii(int c)
 		ret_value = 0;
 	return (ret_value);
 }
-/*
-#include <ctype.h>
-
-int	main(void)
-{
-	//printf("Original: %d\n", __isascii('"'));
-	printf("Mine: %d\n", ft_isascii('"'));
-	
-	return (0);
-}
-*/
