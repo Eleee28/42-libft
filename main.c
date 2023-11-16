@@ -278,3 +278,32 @@ int main()
 	return (0);
 }
 */
+
+
+/** @brief main() function for ft_strdup.c
+ * 
+*/
+
+/*
+int	main(void)
+{
+	char str[5];
+	char *str_ptr;
+	char *src = NULL;
+	int	i;
+
+	str_ptr = &str[0];
+	i = 0;
+	while (i < 5)
+	{
+		str[i] = '0' + i;
+		i++;
+	}
+	src = ft_strdup(str_ptr);
+
+	printf("Original string in the stack: %s\n", str);
+	printf("Copied string in the heap: %s\n", src);
+	free(src);
+	return (0);
+}
+*/
