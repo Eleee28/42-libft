@@ -307,3 +307,18 @@ int	main(void)
 	return (0);
 }
 */
+
+
+/** @brief main() function for ft_strjoin.c
+ * 
+*/
+
+/*
+int main(void)
+{
+	char    *str = ft_strjoin("Hello-", "world");
+	printf("%s\n", str);
+	free(str);
+	return (0);    
+}
+*/
