@@ -23,8 +23,10 @@
  * 
  * 	The terminating null character is considered to be part of the string.
  * 
- * 	@param str string to be converted
- * 	@return integer number
+ * 	@param str string where the search is done
+ *	@param c character searched
+ * 	@return pointer to the first occurrence of the character, 
+ *		NULL if not found
 */
 
 char	*ft_strchr(const char *str, int c)
@@ -38,15 +40,4 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return ((char *)str);
 }
-/*
-#include <string.h>
 
-int main()
-{
-	char *ptr, str[] = "Holaa";
-
-	ptr = ft_strchr(str, 'o');
-	printf("%s\n", ptr);
-	return (0);
-}
-*/
