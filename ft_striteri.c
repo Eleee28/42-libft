@@ -10,7 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_striteri.c
+ * 	@brief Apply functions to strings
+ * 
+ * 	This function applies a given function to a string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief applies a given function to a string
+ * 
+ * 	@param s string
+ *	@param f pointer to a function
+ * 	@return Void
+*/
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
