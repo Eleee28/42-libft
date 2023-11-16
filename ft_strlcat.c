@@ -10,7 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strlcat.c
+ * 	@brief Libc strlcat function
+ * 
+ * 	This function appends a string to another.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief measures the total length of the concatenation
+ * 
+ * 	@param src source string
+ *	@param dest destination string
+ *	@param size number of characters to concatenate
+ * 	@return length of the resulting string
+*/
 
 static int	ft_total_len(const char *src, const char *dest, size_t size)
 {
@@ -25,6 +40,14 @@ static int	ft_total_len(const char *src, const char *dest, size_t size)
 		dest_len++;
 	return (dest_len + src_len);
 }
+
+/** @brief appends a string to another
+ * 
+ * 	@param dest destination string
+ *	@param src source string
+ *	@param size number of characters to concatenate
+ * 	@return length of resulting string
+*/
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
