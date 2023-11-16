@@ -10,7 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strdup.c
+ * 	@brief Libc strdup function
+ * 
+ * 	This function duplicates a string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief duplicates a string
+ * 
+ * 	@param src string
+ * 	@return pointer to the duplicate of the string, 
+ *		NULL if there was any error
+*/
 
 char	*ft_strdup(const char *src)
 {
@@ -31,29 +45,3 @@ char	*ft_strdup(const char *src)
 	ptr[i] = 0;
 	return (ptr);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	char str[5];
-	char *str_ptr;
-	char *src = NULL;
-	int	i;
-
-	str_ptr = &str[0];
-	i = 0;
-	while (i < 5)
-	{
-		str[i] = '0' + i;
-		i++;
-	}
-	src = ft_strdup(str_ptr);
-
-	printf("Original string in the stack: %s\n", str);
-	printf("Copied string in the heap: %s\n", src);
-	free(src);
-	return (0);
-}
-*/
