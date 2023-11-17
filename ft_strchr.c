@@ -6,7 +6,7 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:58:58 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 12:00:22 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 09:32:08 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
  * 	@param str string where the search is done
  *	@param c character searched
  * 	@return pointer to the first occurrence of the character, 
- *		NULL if not found
+ *			NULL if not found
 */
 
 char	*ft_strchr(const char *str, int c)

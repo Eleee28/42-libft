@@ -6,11 +6,35 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:19 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:28:01 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 09:46:03 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strlcpy.c
+ * 	@brief Libc strlcat function
+ * 
+ * 	This function copies and concatenate a string to another.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief copies and concatenate a string to another
+ * 
+ *  Take the full size of the destination buffer and guarantee NULL-termination 
+ * 	if there is room.  Room for the NULL should be included in size.
+ * 
+ * 	Copies up to size - 1 characters from the string src to dest, 
+ * 	NULL-terminating the result if size is not 0.
+ * 
+ * 	If the src and dest strings overlap, the behavior is undefined.
+ * 
+ * 	@param dest destination string
+ *	@param src source string
+ *	@param size number of characters to concatenate
+ * 	@return length of src
+*/
+
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
@@ -30,16 +54,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	size_src = ft_strlen(src);
 	return (size_src);
 }
-/*
-#include <strings.h>
-
-int	main(void)
-{
-	char str1[] = "Hello World!", str2[] = "abcdefg", str3[] = "Hello World!";
-	printf("Original: %d\n", strlcpy(str3, str2, 5));
-	printf("Original: %s\n", str3);
-	printf("Mine: %ld\n", ft_strlcpy(str1, str2, 5));
-	printf("Mine: %s\n", str1);
-	return (0);
-}
-*/

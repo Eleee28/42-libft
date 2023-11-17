@@ -6,11 +6,32 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:35 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/05 11:49:14 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 09:55:42 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strnstr.c
+ * 	@brief Libc strnstr function
+ * 
+ * 	This function locates the first occurrence of a string in another one.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief locates the first occurrence of a string in another one
+ * 
+ * 	Locates the first occurrence of the null-terminated string needle in the 
+ * 	string haystack, where not more than len characters are searched.  
+ * 
+ * 	Characters that appear after a `\0' character are not searched.
+ * 
+ * 	@param haystack string where we search
+ * 	@param needle searched string
+ * 	@param len maximum length to search
+ * 	@return haystack if needle is empty, NULL if it is not found in haystack,
+ * 			otherwise pointer to the first occurrence
+*/
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -34,16 +55,4 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (0);
 }
 
-/*
-#include <string.h>
-#include <stdio.h>
 
-int main(void)
-{
-	char *str = "Hello world!";
-	char *find = "world";
-	
-	printf("%s\n", ft_strnstr(str, find, 5));
-    return (0);
-}
-*/

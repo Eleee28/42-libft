@@ -6,11 +6,27 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 08:45:09 by codespace         #+#    #+#             */
-/*   Updated: 2023/09/25 10:48:28 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 09:47:36 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strmapi.c
+ * 	@brief Apply functions to strings
+ * 
+ * 	This function applies a given function to each character of a string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief applies a given function to each character of a string
+ * 
+ *  Genartes a new string that is the result of apppling the function.
+ * 
+ * 	@param s string
+ *	@param f pointer to a function
+ * 	@return new string
+*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

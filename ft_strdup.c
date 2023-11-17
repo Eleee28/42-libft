@@ -6,7 +6,7 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 10:10:40 by codespace         #+#    #+#             */
-/*   Updated: 2023/11/16 10:35:44 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 09:32:04 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,13 @@
 
 /** @brief duplicates a string
  * 
+ * 	Allocates sufficient memory for a copy of the string and does the copy. 
+ * 
+ * 	If insufficient memory is available the function has no effect.
+ * 
  * 	@param src string
  * 	@return pointer to the duplicate of the string, 
- *		NULL if there was any error
+ *			NULL if there was any error
 */
 
 char	*ft_strdup(const char *src)

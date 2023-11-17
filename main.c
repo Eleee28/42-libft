@@ -6,7 +6,7 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 09:25:36 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:57:45 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 10:05:35 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -320,5 +320,135 @@ int main(void)
 	printf("%s\n", str);
 	free(str);
 	return (0);    
+}
+*/
+
+
+/** @brief main() function for ft_strlcat.c
+ * 
+*/
+
+/*
+int	main(void)
+{
+	char s1[23] = "Hello A", s2[] = "World!";
+	printf("%ld\n", ft_strlcat(s1, s2, 15));
+	printf("%s\n", s1);
+	return (0);
+}
+*/
+
+
+/** @brief main() function for ft_strlcpy.c
+ * 
+*/
+
+/*
+int	main(void)
+{
+	char str1[] = "Hello World!", str2[] = "abcdefg", str3[] = "Hello World!";
+	printf("Original: %d\n", strlcpy(str3, str2, 5));
+	printf("Original: %s\n", str3);
+	printf("Mine: %ld\n", ft_strlcpy(str1, str2, 5));
+	printf("Mine: %s\n", str1);
+	return (0);
+}
+*/
+
+
+/** @brief main() function for ft_strlen.c
+ * 
+*/
+
+/*
+int main()
+{
+	printf("Original: %d\n", strlen("Hello World!"));
+	printf("Mine: %d\n", ft_strlen("Hello World!"));
+}
+*/
+
+
+/** @brief main() function for ft_strncmp.c
+ * 
+*/
+
+/*
+int main(void)
+{
+	char str1[] = "abcdef", str2[] = "abc\375xx";
+	size_t size = 5;
+	printf("%d\n", ft_strncmp(str1, str2, size));
+
+	char str3[] = "abcdef", str4[] = "abc\375xx";
+	size_t size2 = 5;
+	printf("%d\n", strncmp(str3, str4, size2));
+	return (0);
+}
+*/
+
+
+/** @brief main() function for ft_strnstr.c
+ * 
+*/
+
+/*
+int main(void)
+{
+	char *str = "Hello world!";
+	char *find = "world";
+	
+	printf("%s\n", ft_strnstr(str, find, 5));
+    return (0);
+}
+*/
+
+
+/** @brief main() function for ft_strrchr.c
+ * 
+*/
+
+/*
+int main(void)
+{
+	char *ptr, str[] = "teste";
+
+	ptr = ft_strrchr(str, '\0');
+	printf("%p\n", ptr);
+	return (0);
+}
+*/
+
+
+/** @brief main() function for ft_strtrim.c
+ * 
+*/
+
+/*
+int main(void)
+{
+    char str[] = "eobeooaeoeo";
+    char c[] = "eo";
+    char *s;
+    
+    s = ft_strtrim(str, c);
+    printf("%s\n", s);
+    free(s);
+    return (0);
+}
+*/
+
+
+/** @brief main() function for ft_substr.c
+ * 
+*/
+
+/*
+int main(void)
+{
+	char    *str = ft_substr("Hello world!", 2, 10);
+	printf("%s\n", str);
+	free(str);
+	return (0);
 }
 */

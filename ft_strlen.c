@@ -3,14 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elena <elena@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:28 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/12 17:31:35 by elena            ###   ########.fr       */
+/*   Updated: 2023/11/17 09:43:47 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strlen.c
+ * 	@brief Libc strlen function
+ * 
+ * 	This function computes the length of a string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief computes the length of a string
+ * 
+ * 	@param s string
+ * 	@return length of s
+*/
 
 size_t	ft_strlen(const char *s)
 {
@@ -21,13 +34,3 @@ size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-
-int main()
-{
-	printf("Original: %d\n", strlen("Hello World!"));
-	printf("Mine: %d\n", ft_strlen("Hello World!"));
-}
-*/

@@ -6,11 +6,25 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 09:45:35 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/05 11:49:30 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 10:02:31 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_strtrim.c
+ * 	@brief Working with strings
+ * 
+ * 	This function deletes characters in a set from a string.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief locates a character in a string
+ * 
+ * 	@param s string
+ * 	@param c character to locate
+ * 	@return true if found, else false
+*/
 
 static int	find_char(char const *s, char c)
 {
@@ -28,6 +42,16 @@ static int	find_char(char const *s, char c)
 	}
 	return (found);
 }
+
+/** @brief deletes characters in a set from a string
+ * 
+ * 	Deletes all characters in set from the beggining to the end of s1, until
+ * 	finding a character that does not beong to set.
+ * 
+ * 	@param s1 string
+ * 	@param set string with characters to delete
+ * 	@return new string with characters already deleted
+*/
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -51,19 +75,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(str, &s1[beg], (end - beg + 1));
 	return (str);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-    char str[] = "eobeooaeoeo";
-    char c[] = "eo";
-    char *s;
-    
-    s = ft_strtrim(str, c);
-    printf("%s\n", s);
-    free(s);
-    return (0);
-}
-*/

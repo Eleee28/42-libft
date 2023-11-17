@@ -6,14 +6,14 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:07 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/10/05 11:48:54 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 09:45:57 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /** @file ft_strlcat.c
  * 	@brief Libc strlcat function
  * 
- * 	This function appends a string to another.
+ * 	This function copies and concatenate a string to another.
 */
 
 /* -- Includes -- */
@@ -41,12 +41,21 @@ static int	ft_total_len(const char *src, const char *dest, size_t size)
 	return (dest_len + src_len);
 }
 
-/** @brief appends a string to another
+/** @brief copies and concatenate a string to another
+ * 
+ *  Take the full size of the destination buffer and guarantee NULL-termination 
+ * 	if there is room.  Room for the NULL should be included in size.
+ * 
+ * 	Appends string src to the end of dest.  It will append at most 
+ * 	size - strlen(dest) - 1 characters.  It will then NULL-terminate, unless 
+ * 	size is 0 or the original dest string was longer than size.
+ * 
+ * 	If the src and dst strings overlap, the behavior is undefined.
  * 
  * 	@param dest destination string
  *	@param src source string
  *	@param size number of characters to concatenate
- * 	@return length of resulting string
+ * 	@return length of dest + length of src
 */
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
@@ -72,12 +81,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[i] = '\0';
 	return (total_len);
 }
-/*
-int	main(void)
-{
-	char s1[23] = "Hello A", s2[] = "World!";
-	printf("%ld\n", ft_strlcat(s1, s2, 15));
-	printf("%s\n", s1);
-	return (0);
-}
-*/

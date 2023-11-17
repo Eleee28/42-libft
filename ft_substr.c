@@ -6,11 +6,28 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 06:31:28 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/05 11:49:47 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/17 10:05:16 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_substr.c
+ * 	@brief Working with strings
+ * 
+ * 	This function returns a substring.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief returns a substring
+ * 
+ * 	The substring starts with index start and has a maximun length of len.
+ * 
+ * 	@param s string
+ * 	@param start beggining index
+ * 	@param len maximum len of the substring
+ * 	@return pointer to the substring
+*/
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -28,15 +45,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(str, &s[start], len + 1);
 	return (str);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char    *str = ft_substr("Hello world!", 2, 10);
-	printf("%s\n", str);
-	free(str);
-	return (0);
-}
-*/
