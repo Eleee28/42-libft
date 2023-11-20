@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:19 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/17 09:46:03 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:55 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strlcpy.c
+/** @file ft_strlcpy.c 
  * 	@brief Libc strlcat function
  * 
  * 	This function copies and concatenate a string to another.

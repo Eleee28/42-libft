@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 06:31:28 by codespace         #+#    #+#             */
-/*   Updated: 2023/11/17 10:05:16 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:34:16 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_substr.c
+/** @file ft_substr.c 
  * 	@brief Working with strings
  * 
  * 	This function returns a substring.

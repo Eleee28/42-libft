@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:57:28 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:31:23 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:15 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_memset.c
+/** @file ft_memset.c 
  * 	@brief Libc memset function
  * 
  * 	This function writes a number of characters to a string.

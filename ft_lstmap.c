@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 11:52:07 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 10:58:54 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:32:58 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_lstmap.c
+/** @file ft_lstmap.c 
  * 	@brief Function to manipulate lists
  * 
  * 	This function creates a list result of applying a function to each node 

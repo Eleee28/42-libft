@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 10:10:04 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:36:42 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:22 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_putnbr_fd.c
+/** @file ft_putnbr_fd.c 
  * 	@brief Working with file descriptors
  * 
  * 	This function sends a number to a file descriptor.

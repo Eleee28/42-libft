@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 09:31:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 10:16:12 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:32:45 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_itoa.c
+/** @file ft_itoa.c 
  * 	@brief itoa function (oposite to libc atoi function)
  * 
  * 	This function converts an integer to a string.

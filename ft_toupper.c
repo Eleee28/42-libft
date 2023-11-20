@@ -6,11 +6,24 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:45 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/15 10:29:52 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:21:55 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/** @file ft_toupper.c
+ * 	@brief Lower case to upper case conversion
+ * 
+ * 	This function converts from lower case to upper case.
+*/
+
+/* -- Includes -- */
 #include "libft.h"
+
+/** @brief converts a letter from lower case to upper case
+ * 
+ * 	@param c character to convert
+ * 	@return the uppper case letter if c is a lower case letter, c otherwise
+*/
 
 int	ft_toupper(int c)
 {
@@ -18,14 +31,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-
-/*
-#include <ctype.h>
-
-int main()
-{
-	printf("%c\n", ft_toupper('a'));
-	printf("%c\n", toupper('a'));
-	return (0);
-}
-*/

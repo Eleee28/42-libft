@@ -6,15 +6,30 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:49 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/26 12:10:56 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:30:26 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/** @file libft.h
+ * 	@brief Function prototypes for the libft project
+ * 
+ * 	This contains the prototypes for the libft projects as well as the 
+ * 	definition of the list for the bonus part.
+ * 
+*/
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
 # include <stdlib.h>
 # include <unistd.h>
+
+/**
+ * 	@struct s_list
+ * 
+ * 	@var content information contained by the node
+ * 	@var next address of the next node
+*/
 
 typedef struct s_list
 {

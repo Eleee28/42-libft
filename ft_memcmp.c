@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 11:29:44 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:19:20 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:05 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_memcmp.c
+/** @file ft_memcmp.c 
  * 	@brief Libc memcmp function
  * 
  * 	This function compares two byte strings.

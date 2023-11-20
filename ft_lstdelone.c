@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 11:10:29 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 10:36:08 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:32:52 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_lstdelone.c
+/** @file ft_lstdelone.c 
  * 	@brief Function to manipulate lists
  * 
  * 	This function frees the memory of the content and its node.

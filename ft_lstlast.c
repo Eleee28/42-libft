@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 10:23:40 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 10:39:18 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:32:56 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_lstlast.c
+/** @file ft_lstlast.c 
  * 	@brief Function to manipulate lists
  * 
  * 	This function returns the last node of the list.

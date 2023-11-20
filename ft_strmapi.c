@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 08:45:09 by codespace         #+#    #+#             */
-/*   Updated: 2023/11/17 09:47:36 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:34:01 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strmapi.c
+/** @file ft_strmapi.c 
  * 	@brief Apply functions to strings
  * 
  * 	This function applies a given function to each character of a string.

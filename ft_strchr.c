@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:58:58 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/17 09:32:08 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:29 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strchr.c
+/** @file ft_strchr.c 
  * 	@brief Libc strchr function
  * 
  * 	This function locates the first occurrence of a character in the string.

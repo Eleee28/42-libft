@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:56:42 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:27:29 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:13 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_memmove.c
+/** @file ft_memmove.c 
  * 	@brief Libc memmove function
  * 
  * 	This function copies bytes from one string to another.

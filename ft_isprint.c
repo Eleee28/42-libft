@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:55:49 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 10:06:35 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:32:43 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_isprint.c
+/** @file ft_isprint.c 
  * 	@brief Libc isprint function
  * 
  * 	This function tests whether a character is printable.

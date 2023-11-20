@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 11:45:41 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 10:40:32 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:32:54 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_lstiter.c
+/** @file ft_lstiter.c 
  * 	@brief Function to manipulate lists
  * 
  * 	This function iterates the list and applies a function on the content of 

@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:56:21 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:26:25 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:09 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_memcpy.c
+/** @file ft_memcpy.c 
  * 	@brief Libc memcpy function
  * 
  * 	This function copies bytes from one memory area to another.

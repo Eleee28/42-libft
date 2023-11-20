@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:56:06 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:25:43 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:04 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_memchr.c
+/** @file ft_memchr.c 
  * 	@brief Libc memchr function
  * 
  * 	This function locates the first occurrence of a character in a string.

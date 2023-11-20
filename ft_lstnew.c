@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 09:35:23 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:01:05 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:00 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_lstnew.c
+/** @file ft_lstnew.c 
  * 	@brief Function to manipulate lists
  * 
  * 	This function creates a new node.

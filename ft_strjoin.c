@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 06:31:43 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/05 11:48:44 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:51 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strjoin.c
+/** @file ft_strjoin.c 
  * 	@brief Apply functions to strings
  * 
  * 	This function joins two strings.

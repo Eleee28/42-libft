@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:28 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/17 09:43:47 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:59 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strlen.c
+/** @file ft_strlen.c 
  * 	@brief Libc strlen function
  * 
  * 	This function computes the length of a string.

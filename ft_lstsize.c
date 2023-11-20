@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 10:07:44 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:05:57 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:02 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_lstsize.c
+/** @file ft_lstsize.c 
  * 	@brief Function to manipulate lists
  * 
  * 	This function counts the number of nodes of a list.

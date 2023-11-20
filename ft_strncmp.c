@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:32 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/17 09:51:52 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:34:03 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strncmp.c
+/** @file ft_strncmp.c 
  * 	@brief Libc strncmp function
  * 
  * 	This function lexicographically compares two null-terminated strings.

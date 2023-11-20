@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 09:45:35 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/17 10:02:31 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:34:12 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strtrim.c
+/** @file ft_strtrim.c 
  * 	@brief Working with strings
  * 
  * 	This function deletes characters in a set from a string.

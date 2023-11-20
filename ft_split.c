@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 10:02:52 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:57:22 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:26 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_split.c
+/** @file ft_split.c 
  * 	@brief Separate two strings
  * 
  * 	This function splits two strings using a character as delimiter.

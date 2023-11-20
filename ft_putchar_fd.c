@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 10:11:30 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 11:34:06 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:18 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_putchar_fd.c
+/** @file ft_putchar_fd.c 
  * 	@brief Working with file descriptors
  * 
  * 	This function sends a character to a file descriptor.

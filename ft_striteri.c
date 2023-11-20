@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejuarros <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 09:57:43 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/09/21 09:58:15 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:33:49 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_striteri.c
+/** @file ft_striteri.c 
  * 	@brief Apply functions to strings
  * 
  * 	This function applies a given function to a string.

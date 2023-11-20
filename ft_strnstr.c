@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:35 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/17 09:55:42 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:34:07 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strnstr.c
+/** @file ft_strnstr.c 
  * 	@brief Libc strnstr function
  * 
  * 	This function locates the first occurrence of a string in another one.

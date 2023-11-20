@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 10:33:19 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/16 10:22:35 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:32:47 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_lstadd_back.c
+/** @file ft_lstadd_back.c 
  * 	@brief Function to manipulate lists
  * 
  * 	This function adds a node at the end of the list.

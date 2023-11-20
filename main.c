@@ -6,7 +6,7 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 09:25:36 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/17 10:05:35 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:22:12 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -449,6 +449,34 @@ int main(void)
 	char    *str = ft_substr("Hello world!", 2, 10);
 	printf("%s\n", str);
 	free(str);
+	return (0);
+}
+*/
+
+
+/** @brief main() function for ft_tolower.c
+ * 
+*/
+
+/*
+int main()
+{
+	printf("%c\n", ft_tolower('A'));
+	printf("%c\n", tolower('A'));
+	return (0);
+}
+*/
+
+
+/** @brief main() function for ft_toupper.c
+ * 
+*/
+
+/*
+int main()
+{
+	printf("%c\n", ft_toupper('a'));
+	printf("%c\n", toupper('a'));
 	return (0);
 }
 */

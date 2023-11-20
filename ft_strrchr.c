@@ -6,11 +6,11 @@
 /*   By: ejuarros <ejuarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:39 by ejuarros          #+#    #+#             */
-/*   Updated: 2023/11/17 09:57:53 by ejuarros         ###   ########.fr       */
+/*   Updated: 2023/11/20 08:34:09 by ejuarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/** @file ft_strrchr.c
+/** @file ft_strrchr.c 
  * 	@brief Libc memchr function
  * 
  * 	This function locates the last occurrence of a character in a string.
