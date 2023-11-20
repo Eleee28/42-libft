@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 /** @file ft_strrchr.c 
- * 	@brief Libc memchr function
+ * 	@brief Libc strrchr function
  * 
  * 	This function locates the last occurrence of a character in a string.
 */
