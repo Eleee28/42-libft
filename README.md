@@ -1,5 +1,7 @@
 # Libft project
 
+Statement of the project (in [Spanish](es.subject.pdf) / [English](en.subject.pdf))
+
 ## About the project
 
 Libft is a project that consists on creating a library and replicating several funtions that belong to the Libc library. </br>
