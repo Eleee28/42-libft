@@ -1,4 +1,12 @@
-# Libft project
+<p align="center">
+  <img src="https://github.com/ayogun/42-project-badges/blob/main/badges/libftm.png" alt="libft badge"/>
+</p>
+
+<h1 align="center">
+ 42 Libft
+</h1>
+
+<!-- # Libft project -->
 
 Statement of the project (in [Spanish](es.subject.pdf) / [English](en.subject.pdf))
 
